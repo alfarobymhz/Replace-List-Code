@@ -1,18 +1,18 @@
 def isList(z)
-  is_valid = 1
-  current = z
+  x1 = 1
+  x2 = z
   
-  while current != 0 do
-    a = fst(current)
-    b = snd(current)
+  while x2 != 0 do
+    a = fst(x2)
+    b = snd(x2)
     
     if a == 0
-      is_valid = 0
-      current = 0 # Kondisi untuk keluar dari WHILE loop
+      x1 = 0
+      x2 = 0 # Kondisi untuk keluar dari WHILE loop
     else
-      current = b # Melanjutkan pengecekan ke elemen berikutnya
+      x2 = b # Melanjutkan pengecekan ke elemen berikutnya
     end
   end
   
-  return is_valid
+  return x1
 end

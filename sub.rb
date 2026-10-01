@@ -1,16 +1,16 @@
 def sub(a, b)
-  res = a
-  count = b
+  x0 = a
+  x1 = b
   
-  # Lakukan pengurangan nilai res sebanyak b kali
-  while count != 0 do
-    # Pastikan res tidak menjadi negatif (karena beroperasi pada bilangan asli)
-    if res != 0
-      res = res - 1
+  # Lakukan pengurangan nilai x0 sebanyak x1 kali
+  while x1 != 0 do
+    # Pastikan x0 tidak menjadi negatif (karena beroperasi pada bilangan asli)
+    if x0 != 0
+      x0 = x0 - 1
     end
     
-    count = count - 1
+    x1 = x1 - 1
   end
   
-  return res
+  return x0
 end

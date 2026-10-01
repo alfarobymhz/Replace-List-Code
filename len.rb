@@ -1,12 +1,12 @@
 def len(z)
-  count = 0
-  current = z
+  x0 = 0
+  x1 = z
   
   # Selama list belum kosong (0), hitung panjangnya
-  while current != 0 do
-    count = count + 1
-    current = snd(current) # Lanjut ke elemen berikutnya
+  while x1 != 0 do
+    x0 = x0 + 1
+    x1 = snd(x1) # Lanjut ke elemen berikutnya
   end
   
-  return count
+  return x0
 end

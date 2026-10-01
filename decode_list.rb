@@ -1,17 +1,15 @@
 def decode_list(z)
-  hasil_list = []
-  current = z
+  x0 = []
+  x1 = z
   
-  while current != 0 do
-    a = fst(current)
-    b = snd(current)
+  while x1 != 0 do
+    a = fst(x1)
+    b = snd(x1)
     
-    # Masukkan elemen asli (dikurangi 1) ke dalam array
-    hasil_list.push(a - 1)
+    x0.push(a - 1)
     
-    # Lanjut ke sisa list berikutnya
-    current = b
+    x1 = b
   end
   
-  return hasil_list
+  return x0
 end

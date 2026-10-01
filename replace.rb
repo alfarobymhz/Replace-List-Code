@@ -1,5 +1,4 @@
 def replace(e, i, x)
-  # Inisialisasi variabel input
   x1 = e 
   x2 = i 
   x3 = x 
